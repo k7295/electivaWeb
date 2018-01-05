@@ -1,0 +1,278 @@
+/* Typography */
+
+h4{
+  font-size: 22px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+h5{
+  font-size: 26px;
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Personal Flavour */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+
+}
+
+
+
+/* Custom ultilities */
+  /* Centered */
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+  .vertical-centered {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+
+  }
+  /* Separator */
+
+  .separator {
+    position: relative;
+    margin-top: 1.7em;
+    padding-top: 1.7em;
+    margin-bottom: 1.7em;
+    padding-bottom: 1.7em;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: inherit;
+    font-family: 'Abril Fatface', cursive;
+  }
+  .separator:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 86px;
+    height: 2px;
+    background-color: #222;
+
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .separator.orange:before {
+    background-color: #d87843;
+  }
+
+
+/* Button inverted */
+
+.button.inverted {
+  font-size: inherit;
+  padding: 25px 70px;
+  color: white;
+  height: auto;
+  border: 3px solid white;
+  text-transform: none;
+  font-size: 26px;
+  font-family: "ambleregular";
+}
+
+.button.inverted:hover {
+  background: white;
+  color: #222;
+}
+
+/* Work */
+
+
+/* Work Filters */
+
+.work-filters {
+  list-style: none;
+  text-align: center;
+}
+.work-filters li {
+  display: inline-block;
+  margin: 0 .5em;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: 'Poiret One', cursive;
+
+}
+.work-filters li a {
+  color: inherit;
+  text-decoration: none;
+}
+.work-filters li.active {
+ font-family: 'Amatic SC', cursive;
+ 
+}
+
+/* Work items */
+
+.work-items {
+  list-style: none;
+  width: 100%;
+  display: inline-block;
+  
+ 
+}
+.work-items li {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+
+  /* important because we need to overwrite the default skeleton */
+  margin: 0!important;
+  width: 300px;
+  border: 10px solid white;
+
+  position: relative;
+}
+.work-items li:nth-child(4n) {
+  margin-left: 0;
+}
+.work-items li img{ /*cambio en la proporcion de imagen*/
+  width: auto;
+  height: 100%;
+  display: block;
+}
+
+#selectCantProdu{
+  width: 80px;
+} 
+
+td,th{
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+} 
+
+/*Contact*/
+
+.contact-us {
+  background-color: #f2f2f2;
+  text-align: left;
+  width: 900px;
+ 
+}
+.contact-us-details {
+  padding: 70px;
+}
+.contact-us-details h5 {
+  font-size: 2rem;
+}
+.contact-us-details .social-links a {
+  color: #222;
+  display: block;
+}
+
+.contact-us-details .social-links li {
+  list-style: none;
+  float: left;
+  font-size: 24px;
+  margin-right: 10px;
+}
+.contact-us-details .social-links li:last-child {
+  margin-right: 0;
+}
+.contact-us-form {
+  padding: 70px;
+  background-color: #e4e4e4;
+}
+.contact-us .row {
+  margin: 0;
+}
+
+/* Services */
+.services {
+  list-style: none;
+  margin: 70px 0;
+}
+.services .service-image {
+  height: 150px;
+  margin-bottom: 20px;
+}
+.services .service-image img{
+  display: table-cell;
+  display: block;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.services p {
+  font-size: 16px;
+  letter-spacing: 0;
+}
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons secion and style it
+there.
+*/
+
+
+/* Larger than mobile */
+@media (max-width: 400px) {
+  .button.inverted {
+    padding: 15px;
+  }
+}
+@media (min-width: 400px)  and (max-width: 750px) {
+  .work-items li.isotope-item.columns {
+    width: 100%;
+  }
+  .people-list li.people-list-item.columns {
+    width: 46%;
+    margin: 2%;
+    box-sizing: content-box;
+  }
+  .contact-us-details {
+    padding: 70px 25px;
+    text-align: center;
+  }
+  .contact-us-details .social-links li {
+    text-align: center;
+    width: 33%;
+    margin: 0;
+  }
+  .contact-us-details h5 {
+    font-size: 1.7rem;
+  }
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) and (max-width: 750px) {
+
+  .work-items li.isotope-item.columns {
+    width: 50%;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {}
