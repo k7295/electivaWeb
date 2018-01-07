@@ -1,0 +1,79 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21/12/2017, 03:41:34 PM
+    Author     : Curso
+*/
+
+h1{
+    text-align: center;
+    font-family: 'Poiret One', cursive;
+
+}
+
+h2{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poiret One', cursive;
+
+}
+
+table {
+   
+    border-collapse: collapse;
+    width: 600px;
+    font-family: 'Poiret One', cursive;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    
+    
+}
+
+#tablaPrincipal td{
+     border-right:  1px solid #ddd;
+     border-bottom:  1px solid #ddd;
+}
+
+
+
+tr:hover {background-color:#f5f5f5;}
+
+form{
+     padding-top: 50px;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid darkblue;
+    
+}
+
+select {
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+a:link, a:visited {
+    border-style: solid;
+    border-color: darkblue;
+    color: black;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    
+}
+

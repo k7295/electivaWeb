@@ -1,0 +1,23 @@
+Laboratorio Responsive.
+
+Se debe crear una aplicación web sencilla para un supermercado en donde se pueda realizar las siguiente tareas:
+	* ver una pequeña descripción(puede ser cualquier texto ejemplo) y debe incluir al menos una imagen
+	* Visualizar por medio de una tabla productos disponibles en el mercado (con 4 productos ejemplos minimo) con los siguientes campos:
+		- ID producto
+		- Producto
+		- Precio
+		- Cantidad
+		- Boton para "comprar" o "añadir al carrito" el producto. 
+	* Contact us usando un formulario y en un texto aparte ubicación ficticia del supermercado, además de iconos de redes sociales (twitter,fb,g+) y que al darle click se redireccione a la red social correspondiente.
+
+- Puntos a considerar:
+ * Framework: Skeleton http://getskeleton.com/ 
+ * Documentación de Skeleton: http://ieatcss.com/skeleton-tutorial.html#table !! https://www.sitepoint.com/getting-started-with-skeleton-simple-css-boilerplate/ !! https://webdesign.tutsplus.com/categories/skeleton
+
+ * Debe ser responsive y usar css. 
+
+
+ Estudiantes:
+ Giovanni Villalobos.
+ Karen Lépiz.
+ Roberto Ortíz. 
