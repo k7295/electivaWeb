@@ -1,0 +1,18 @@
+Se desea construir una aplicación que provea la facilidad de convertir divisas.  La aplicación debe proveer mínimo 25 posibles divisas y una de ellas DEBE ser el COLON COSTARRICENSE (CRC). La cantidad de posibles divisas podría crecer así que se recomienda diseñar esta aplicación para que funcione para cualquier cantidad de divisas.
+Para esto se contará con una sección de la página donde se alojarán todas las divisas disponibles, sin embargo esta parte estará oculta y se habilitará cuando el usuario desee ingresar a seleccionar sus divisas favoritas.
+ 	Cada una de las divisas  en esta sección de la aplicación debe mostrar su identificación, nombre, bandera del país de la que es “origen” y su símbolo.
+
+Para indicar que desea seleccionar una divisa como favorita se marca la misma y se refleja mediante un ícono particular de su elección para indicar que está seleccionada. En la muestra de la izquierda se marca por medio de una estrella 
+
+Se puede seleccionar N divisas como favoritas.
+
+Al iniciar debe existir la divisa costarricense seleccionada por default.
+
+Una vez seleccionadas las divisas favoritas, se puede ocultar nuevamente esta sección.
+En otra sección de la página deben aparecer las divisas favoritas seleccionadas y permite que se ingrese una cantidad en cualquiera de sus representaciones, de modo que se calcula el equivalente en el resto de divisas favoritas.
+ 
+Esta aplicación debe tener una apariencia agradable y considerar aspectos de facilidad de uso para un usuario común. Se desea que funcione de forma adaptativa para que eventualmente pueda ser trasladada a una aplicación móvil.
+La obtención de los tipos de cambio de las distintas divisas debe ser localizada a través de servicios web de los cuales puedan ser extraídos los factores de conversión.
+La aplicación puede ser construida con cualquiera de las tecnologías revisadas en clase hasta ahora.
+La entrega es  en la sección de laboratorios (Laboratorio 1) por medio de un archivo comprimido llamado Laboratorio1_SuNombre. La fecha de entrega es viernes 12 de enero al final de la clase.
+ 
