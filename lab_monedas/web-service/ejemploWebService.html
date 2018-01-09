@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Test consumir WebService</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+  <script type="text/javascript">
+    
+    // Llamada al webservice
+    function callWebService()
+    {
+      url = 'https://openexchangerates.org/api/latest.json?app_id=aad807292cb3477f9bf7ccf077984a42';
+      datos = {};
+      var monedas,valor,resultadoJson;
+      resultadoJson = new Array();
+      $.getJSON(url, datos, function(response){
+        monedas = new Array();
+        valor = new Array();
+        
+        var pos = 0;
+        for (var key in  response.rates) 
+        {
+            if (response.rates.hasOwnProperty(key)) 
+            {
+                console.log(key + " -> " + response.rates[key]);
+                monedas[pos] = key;
+                valor[pos] = response.rates[key];
+            }
+            pos++;
+        }
+        console.log(monedas);
+        console.log(valor);
+        resultadoJson[0] = monedas;
+        resultadoJson[1] = valor; 
+        //for (i = 0; i < cars.length; i++) { 
+          //  text += cars[i];
+            //console.log(text);
+       // }
+         // var data = response.rates;
+         // console.log(data.);
+         // console.log(cars[2]);
+          //console.log(data[cars[2]]);
+          console.log(resultadoJson);
+          
+          document.getElementById("monedas").innerHTML = resultadoJson[0];
+          document.getElementById("valor").innerHTML = resultadoJson[1];
+      });
+      
+    }
+  </script>
+  
+</head>
+
+<body>
+
+<button type="button" onclick="javascript:callWebService();">Llamar a WS</button>
+<p id="monedas"></p>
+  <p id="valor"></p>  
+
+<div id="resultado_json"></div>
+
+</body>
+</html>

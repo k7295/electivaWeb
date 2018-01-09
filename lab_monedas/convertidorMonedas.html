@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Convertidor de Divisas</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+  <script type="text/javascript" src="funcionesConvertidor.js"></script>
+
+ <!-- Fonts -->
+ <link href="https://fonts.googleapis.com/css?family=Boogaloo|Poiret+One|Unica+One" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+<div class="container">
+    <!-- titulo/logo del app -->
+    <div class="LogoApp">
+        <div class="col-sm-12">
+            <img src="Logo.png" class="img-responsive" height="600px" width="600px">
+        </div>
+    </div>
+
+    <div class="container-conversor">
+        <div class="col-sm-4">
+            <!-- Seccion de divisas -->
+            <div class="divisasDisp">
+                <div class="row">
+                    <img src="img_divisas.png" class="img-responsive" height="40px" width="300px">
+                </div>
+                <div class="row">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="btn-mostrar-ocultar">
+                                    <button type="buttom" class="btn btn-primary " onclick="mostrarDivisas()">Mostrar</button>
+                                    <button type="buttom" class="btn btn-primary " onclick="ocultarDivisas()">Ocultar</button>                                
+                                </div>
+                                
+                            </div>
+                        </div>
+
+                        <div class="row" id="myDIV">
+                                <div>
+                                       <!-- <ul class="list-group">
+                                                <li class="list-group-item">First item</li>
+                                                <li class="list-group-item">Second item</li>
+                                                <li class="list-group-item">
+                                                    <label ><input type="checkbox" value=""> <i class="glyphicon glyphicon-plus"></i>Option 1</label>
+                                                </li>
+                                        </ul> -->
+
+                                        <ul class="list-group" id="myUL">
+                                            
+                                        </ul>
+                                        
+                                        <button type="buttom" class="btn btn-default " onclick="cargarFavoritos()">Agregar Favoritos</button>
+                                </div>
+                        </div>
+                        
+                </div>                
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <!-- Seccion de favoritos -->
+            <div class="favoritos">
+                <div class="row">
+                    <img src="img_conversor.png" class="img-responsive" height="40px" width="230px">
+                </div>
+                <div class="row">
+
+                    <div class="row">
+                        <h1 id="prueba"></h1>
+                        <div id="favoritos">
+                             <ul class="list-group" id="myFav"></ul>
+
+                        </div>
+                    </div>
+                </div>      
+                
+            </div>
+        </div>
+        
+        
+    </div>
+    
+    
+    
+</div>
+<footer>
+    <div class="container-footer">
+        <p>Karen Lepiz Chacon</p>
+        <p>2013005341</p>
+    </div>
+</footer>
+
+</body>
+</html>
