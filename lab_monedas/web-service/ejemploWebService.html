@@ -6,33 +6,89 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
   <script type="text/javascript">
-    
-    // Llamada al webservice
+ var siglasPais = new Array(
+  "AFN",
+  "ALL",
+  "ARS",
+  "AUD",
+  "BOB",
+  "BRL",
+  "CNH",
+  "COP",
+  "CRC",
+  "CUP",
+  "EGP",
+  "SVC",
+  "HNL",
+  "IRR",
+  "IQD",
+  "JPY",
+  "MXN",
+  "NIO",
+  "PRK",
+  "PAB",
+  "RUB",
+  "RWF",
+  "TRY",
+  "GBP",
+  "USD"
+);
+
+function getRates()
+{
+    xmlhttp.open("GET", 'https://openexchangerates.org/api/latest.json?app_id=aad807292cb3477f9bf7ccf077984a42', true);
+    xmlhttp.send();
+}
+
+var xmlhttp = new XMLHttpRequest();
+var currencies;
+xmlhttp.onreadystatechange = function() {
+    currencies= new Object();
+    var pos = 0;
+    if (this.readyState == 4 && this.status == 200) {
+        var myObj = JSON.parse(this.responseText);
+        for (i=0 ; i < siglasPais.length ; i++)//var key in  myObj.rates) 
+        {
+            if (myObj.rates.hasOwnProperty(siglasPais[i])) 
+            {
+                currencies[pos] = myObj.rates[siglasPais[i]];
+            }
+            pos++;
+        }
+    }
+}
+
+// Llamada al webservice
     function callWebService()
     {
       url = 'https://openexchangerates.org/api/latest.json?app_id=aad807292cb3477f9bf7ccf077984a42';
       datos = {};
+      var pos = 0;
       var monedas,valor,resultadoJson;
       resultadoJson = new Array();
       $.getJSON(url, datos, function(response){
         monedas = new Array();
         valor = new Array();
         
-        var pos = 0;
-        for (var key in  response.rates) 
-        {
-            if (response.rates.hasOwnProperty(key)) 
-            {
-                console.log(key + " -> " + response.rates[key]);
-                monedas[pos] = key;
-                valor[pos] = response.rates[key];
-            }
-            pos++;
+        
+        for(i=0 ; i < siglasPais.length ; i++){
+          //for (var key in  response.rates) 
+         // {
+              if (response.rates.hasOwnProperty(siglasPais[i])) 
+              {
+                  //console.log(key + " -> " + response.rates[key]);
+                  //monedas[pos] = key;
+                  valor[pos] = response.rates[siglasPais[i]];
+              }
+              pos++;
+         // }
         }
-        console.log(monedas);
-        console.log(valor);
-        resultadoJson[0] = monedas;
-        resultadoJson[1] = valor; 
+        
+        
+       // console.log(monedas);
+       // console.log(valor);
+       // resultadoJson[0] = monedas;
+        //resultadoJson[0] = valor; 
         //for (i = 0; i < cars.length; i++) { 
           //  text += cars[i];
             //console.log(text);
@@ -41,12 +97,19 @@
          // console.log(data.);
          // console.log(cars[2]);
           //console.log(data[cars[2]]);
-          console.log(resultadoJson);
-          
-          document.getElementById("monedas").innerHTML = resultadoJson[0];
-          document.getElementById("valor").innerHTML = resultadoJson[1];
+         // console.log(resultadoJson);
+         // for(i=0 ; i < siglasPais.length ; i++){
+          //  document.getElementById("monedas").innerHTML = resultadoJson[0];
+            document.getElementById("valor").innerHTML = valor;
+         // }
+          return pos;
       });
-      
+    }
+    function prueba(){
+      console.log(currencies);
+      for (i = 0 ; i < siglasPais.length;i++){
+
+      }
     }
   </script>
   
@@ -54,7 +117,8 @@
 
 <body>
 
-<button type="button" onclick="javascript:callWebService();">Llamar a WS</button>
+<button type="button" onclick="javascript:getRates();">Llamar a WS</button>
+<button type="button" onclick="javascript:prueba();">Boton Prueba</button>
 <p id="monedas"></p>
   <p id="valor"></p>  
 
