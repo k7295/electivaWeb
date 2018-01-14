@@ -1,0 +1,53 @@
+.table-responsive{
+    margin-left: 8%;
+}
+#compra {
+    margin-top: 10px;
+    min-width: 500px;
+ 
+    
+
+}
+
+#compra thead {
+    background-color: rgb(6, 44, 77);
+    color: white;
+    font-weight: bold;
+}
+
+
+#total {
+    font-weight: bold;
+}
+
+#compra td:nth-child(2),
+#compra td:nth-child(3) {
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+#compra td:nth-child(1){
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+h1,h2{
+    text-align: center;
+    font-family: 'Questrial', sans-serif;
+}
+#cantidad {
+    text-align: center;
+}
+form{
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+    
+}
+
+#cantidad{
+    width: 80px;
+    margin-left: 8%;
+}
+#accesorios{
+    width: 400px;
+    margin-left: 8%;
+}
