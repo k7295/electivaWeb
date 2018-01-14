@@ -1,0 +1,19 @@
+.container-footer{
+    padding-top: 13px;
+}
+
+footer p {
+    
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
+    color: #362478;
+    text-align: center;
+}
+
+footer{
+    background-color: #EFEFF0;
+}
+
+h1{
+    text-align: center;
+}

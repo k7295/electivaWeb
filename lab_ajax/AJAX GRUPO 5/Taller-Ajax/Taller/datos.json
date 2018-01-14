@@ -1,0 +1,59 @@
+{
+
+"persona": [
+ {"nombre": "Kevin",
+ "primerApellido": "Montoya",
+ "segundoApellido": "Meza",
+ "edad": 21,
+ "Universidad": "ITCR",
+ "Ciudad": "Cartago",
+ "Pais": "Costa Rica"
+ },
+
+ {"nombre": "Javier",
+ "primerApellido": "Contreras",
+ "segundoApellido": "Muñoz",
+ "edad": 21,
+ "Universidad": "ITCR",
+ "Ciudad": "Cartago",
+ "Pais": "Costa Rica"
+ },
+
+ {"nombre": "Randall",
+ "primerApellido": "Delgado",
+ "segundoApellido": "Miranda",
+ "edad": 19,
+ "Universidad": "ITCR",
+ "Ciudad": "Cartago",
+ "Pais": "Costa Rica"
+  },
+
+  {"nombre": "Bryan",
+  "primerApellido": "Hernandez",
+  "segundoApellido": "Sibaja",
+  "edad": 19,
+  "Universidad": "ITCR",
+  "Ciudad": "Cartago",
+  "Pais": "Costa Rica"
+   },
+
+   {"nombre": "Fabricio",
+   "primerApellido": "Alvarado",
+   "segundoApellido": "Esquivel",
+   "edad": 19,
+   "Universidad": "ITCR",
+   "Ciudad": "Cartago",
+   "Pais": "Costa Rica"
+   },
+
+   {"nombre": "Ericka",
+   "primerApellido": "Solano",
+   "segundoApellido": "Fernandez",
+   "edad": 19,
+   "Universidad": "ITCR",
+   "Ciudad": "Cartago",
+   "Pais": "Costa Rica"
+    }
+]
+
+}

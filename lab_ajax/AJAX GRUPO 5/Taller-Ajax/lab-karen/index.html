@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="funciones.js"></script>
+    <title>Ajax</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Unica+One" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="informacion"></div>
+
+        <br>
+
+        <h1>Consulta de personas y países</h1>
+
+        <table class="table" id="tablaPersonas">
+            <thead>
+                <tr>
+                    <td>Nombre</td>
+                    <td>Primer Apellido </td>
+                    <td>Segundo Apellido </td>
+                    <td>Edad</td>
+                    <td>Universidad </td>
+                    <td>Ciudad</td>
+                    <td>País</td>
+
+                </tr>
+            </thead>
+            <tbody> </tbody>
+
+        </table>
+
+        <br>
+
+        <button class="btn btn-default" onclick="obtenerPersonas()"> Mostrar Personas </button>
+
+        <br>
+        <br>
+
+        <table class="table" id="tablaPaises">
+            <tbody>
+                <thead>
+                    <tr>
+                        <td>País listado</td>
+                        <td>Código Alpha</td>
+                        <td>Capital</td>
+                        <td>Población</td>
+                    </tr>
+                </thead>
+
+            </tbody>
+
+        </table>
+        <br>
+        <br>
+        <input class="form-control" type="text" id="pais">
+        <br>
+        <button class="btn btn-default" onclick="obtenerPaises()"> Consultar país </button>
+    </div>
+
+    <footer>
+        <div class="container-footer">
+            <p>Karen Lepiz Chacon</p>
+            <p>2013005341</p>
+        </div>
+    </footer>
+</body>
+
+</html>
