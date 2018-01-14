@@ -3,8 +3,7 @@ $(document).ready(function(){
 
     // llenar el select con datos
    cargarSelect();
-    
-    
+   
     //console.log(Object.keys(accesorios).length);
         $("#boton").click(function(){
             addRow();

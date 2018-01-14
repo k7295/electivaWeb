@@ -1,12 +1,16 @@
+/* Include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+  }
 .table-responsive{
     margin-left: 8%;
 }
 #compra {
     margin-top: 10px;
     min-width: 500px;
- 
-    
-
+}
+.container-footer{
+    padding-top: 13px;
 }
 
 #compra thead {
@@ -50,4 +54,16 @@ form{
 #accesorios{
     width: 400px;
     margin-left: 8%;
+}
+
+footer p {
+    
+    font-family: 'Unica One', cursive;
+    font-size: 18px;
+    color: #362478;
+    text-align: center;
+}
+
+footer{
+    background-color: #EFEFF0;
 }

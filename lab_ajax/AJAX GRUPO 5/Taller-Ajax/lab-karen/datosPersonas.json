@@ -1,0 +1,59 @@
+{
+    
+    "persona": [
+     {"nombre": "Karen",
+     "primerApellido": "Lepiz",
+     "segundoApellido": "Chacon",
+     "edad": 22,
+     "Universidad": "ITCR",
+     "Ciudad": "San Jose",
+     "Pais": "Costa Rica"
+     },
+    
+     {"nombre": "Fulano",
+     "primerApellido": "FL",
+     "segundoApellido": "FLL",
+     "edad": 30,
+     "Universidad": "Latina",
+     "Ciudad": "Guanacaste",
+     "Pais": "Costa Rica"
+     },
+    
+     {"nombre": "Rogelio",
+     "primerApellido": "RG",
+     "segundoApellido": "RGG",
+     "edad": 18,
+     "Universidad": "Fidelitas",
+     "Ciudad": "Cartago",
+     "Pais": "Costa Rica"
+      },
+    
+      {"nombre": "Martha",
+      "primerApellido": "MT",
+      "segundoApellido": "MTT",
+      "edad": 25,
+      "Universidad": "UAM",
+      "Ciudad": "Limon",
+      "Pais": "Costa Rica"
+       },
+    
+       {"nombre": "Sutano",
+       "primerApellido": "Sy",
+       "segundoApellido": "Syy",
+       "edad": 23,
+       "Universidad": "UCR",
+       "Ciudad": "Heredia",
+       "Pais": "Costa Rica"
+       },
+    
+       {"nombre": "Carmello",
+       "primerApellido": "Cl",
+       "segundoApellido": "Cll",
+       "edad": 28,
+       "Universidad": "UNA",
+       "Ciudad": "Cartago",
+       "Pais": "Costa Rica"
+        }
+    ]
+    
+    }

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src ="ajax.js"></script>
+    <title>Taller Ajax</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body style="background-color: teal; color: white;">
+
+<div id ="informacion"></div>
+    
+    <br>
+
+    <h1 style="margin-left: 465px;">Registro de personas y países</h1>
+    
+    <table id="tablaPersonas" style="margin-left: 400px; text-align: center;">
+        <tbody> 
+        
+            <tr> 
+                <td>Nombre |</td>
+                <td>Primer Apellido |</td>
+                <td>Segundo Apellido |</td>
+                <td>Edad |</td>
+                <td>Universidad |</td>
+                <td>Ciudad |</td>
+                <td>País</td>
+            
+            </tr>
+        </tbody> 
+    
+    </table>
+    
+    <br>
+    
+    <button style="margin-left: 560px; background-color: lightblue; color: white; font-size: 16px;" onclick = "obtenerDatosPersonas()"> Mostrar Datos de Personas </button>
+    
+    <br>
+    <br>
+    
+    <table id="tablaPaises" style="margin-left: 525px; text-align: center;">
+        <tbody> 
+        
+            <tr> 
+                <td>País listado |</td>
+                <td>Código Alpha |</td>
+                <td>Capital |</td>
+                <td>Población</td>
+            </tr>
+        </tbody> 
+    
+    </table>
+    <br>
+    <br>
+    <input type="text" id="pais" style="margin-left: 590px; text-align: center;">
+    <br>
+    <button style="margin-left: 575px; background-color: lightblue; color: white; font-size: 16px;" onclick = "obtenerDatosPaises()"> Mostrar Datos del País </button>
+    
+</body>
+</html>
