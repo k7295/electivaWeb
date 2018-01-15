@@ -1,0 +1,4 @@
+Como actividad se deberá realizar una página, la cual contiene tres secciones y un menú de acceso 
+a estas secciones. Para cada sección se elegirán diferentes elementos de Bootstrap que no se hayan visto 
+a lo largo del curso, por ejemplo, Carousel o Media Objects. 
+*La página deberá ser responsive y ser personalizada por medio del CSS. 
