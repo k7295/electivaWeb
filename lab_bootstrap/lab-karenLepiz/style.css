@@ -1,0 +1,179 @@
+.container-footer{
+  margin-top: 100px;
+}
+
+footer p {
+  
+  font-family: 'Unica One', cursive;
+  font-size: 18px;
+  color: #362478;
+  text-align: center;
+}
+
+footer{
+  background-color: #EFEFF0;
+}
+
+
+#section1,
+#section2{
+  margin-top:80px;
+  height:500px;
+}
+
+
+#section3{
+  height: 500px;
+  margin-bottom: 10px;
+}
+
+body{
+    background-color: #D6DED5;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  margin: 5px;
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media (max-width: 800px) {
+  .column {
+      -ms-flex: 70%;
+      flex: 70%;
+      max-width: 70%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+  }
+}
+
+
+.imagebox {
+  padding: 0px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.imagebox img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  border-radius: 12px;
+}
+
+.imagebox .imagebox-desc {
+  bottom: 0px;
+  color: white;
+  font-size: 1.2em;
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.imagebox:hover img {
+  opacity: 0.7;
+}
+
+.imagebox:hover .imagebox-desc {
+  opacity: 1.5;
+}
+
+
+
+.btn-default{
+  background-color: transparent;
+  border: 2px solid darkblue;
+  border-radius: 10px;
+}
+
+
+
+.bgimg {
+  
+  background-image: url('https://images.unsplash.com/photo-1445964047600-cdbdb873673d?crop=entropy&fit=crop&fm=jpg&h=400&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=600');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+
+.containerComments {
+  border: 2px solid #ccc;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 16px;
+  margin: 16px 0
+}
+
+.containerComments::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.containerComments span {
+  font-size: 20px;
+  margin-right: 15px;
+}
